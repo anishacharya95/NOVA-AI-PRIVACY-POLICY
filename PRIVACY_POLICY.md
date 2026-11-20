@@ -14,7 +14,7 @@ This Privacy Policy explains how Nova AI handles information when you use the An
 - Nova Free sends requests through a Cloudflare Worker to its configured upstream model provider.
 - Firebase Authentication and Firestore are used for account and limited conversation-index data when Firebase is configured for the app.
 - Provider API keys that you add are encrypted using Android Keystore-backed AES-GCM encryption and are not uploaded or synced by the app.
-- The reviewed build documentation reports no analytics, advertising, or crash-reporting SDK.
+- Nova AI integrates Google Mobile Ads and UMP consent SDKs for advertising and consent management. These SDKs may process device, network, ad-interaction and diagnostic data.
 
 ## 2. Information handled by Nova AI
 
@@ -80,11 +80,21 @@ The reviewed Android manifest requests internet access and network-state access.
 
 The reviewed app documentation states that Nova AI does not access your location, contacts, microphone, camera, SMS, call logs, calendar, or installed-app list. It does not read files you have not explicitly selected through the Android file picker. Images are processed only when you choose to attach or submit them through a feature.
 
-## 7. Analytics, advertising, and sale of data
+## 7. Advertising, device data, and privacy choices
 
-The reviewed build documentation reports that the app includes no analytics SDK, advertising SDK, or crash-reporting SDK. Nova AI does not sell personal data.
+Nova AI integrates Google Mobile Ads (AdMob) to display App Open ads when the app is opened or returned to the foreground, a banner in the chat screen, and an interstitial at the Image Studio exit transition. Google and its advertising partners supply these ads.
 
-Third-party infrastructure providers may process limited technical information as described in this policy. Their own privacy terms apply to their services.
+The Mobile Ads SDK may automatically collect and share information for ad delivery, measurement, analytics, and fraud prevention, including:
+- IP address, which may be used to estimate general location;
+- app and ad interactions, such as app launches, ad views, and taps;
+- diagnostic and performance information, such as app launch time, hang rate, and energy use;
+- device and account identifiers, which may include the Android advertising ID and app-set identifiers where available.
+
+Google states that Mobile Ads SDK data is encrypted in transit using TLS. The exact information processed can depend on device settings, region, consent choices, and enabled ad features.
+
+Nova AI integrates Google's User Messaging Platform (UMP) SDK to refresh consent information at app launch and show consent messages when required. Ad requests are made only when UMP reports that ads may be requested. Ad requests are configured for the general-audience content rating. A privacy-options entry point is shown in the in-app privacy policy screen when UMP reports that one is required.
+
+Google and its advertising partners process advertising information under their own privacy terms. Nova AI does not sell personal data. For details, see Google's [Mobile Ads SDK data disclosure](https://developers.google.com/admob/android/privacy/play-data-disclosure) and [Privacy Policy](https://policies.google.com/privacy).
 
 ## 8. Security
 
