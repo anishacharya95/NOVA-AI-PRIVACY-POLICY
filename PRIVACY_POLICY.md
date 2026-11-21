@@ -2,7 +2,7 @@
 
 **Effective date:** 20 November 2026  
 **App:** Nova AI for Android  
-**Package:** `com.novaai.app`  
+**Package:** `com.novaai.mobileassistant`  
 **Developer contact:** [Anishacharya95@gmail.com](mailto:Anishacharya95@gmail.com)
 
 This Privacy Policy explains how Nova AI handles information when you use the Android application and its optional Nova Free service. It is based on the app's current repository documentation and implementation notes. Features and data flows may change as the app evolves; this policy must be updated before materially different data practices are released.
